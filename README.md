@@ -38,8 +38,6 @@ Chúng tôi chuyên phân phối sản phẩm từ các thương hiệu hàng đ
 
 - [Sextoy Nữ](https://oichin.net/sextoy-nu) — Máy rung, máy hút, dildo, vibrator
 - [Sextoy Nam](https://oichin.net/sextoy-nam) — Âm đạo giả, masturbator, vòng đeo
-- [Đồ Chơi Cặp Đôi](https://oichin.net/do-choi-doi) — Couple vibrator, remote control
-- [Thương Hiệu](https://oichin.net/thuong-hieu) — Lelo, Satisfyer, Lovense, We-Vibe...
 - [Blog Wellness](https://oichin.net/blog) — Kiến thức sức khỏe tình dục
 
 ---
@@ -71,5 +69,5 @@ Chúng tôi chuyên phân phối sản phẩm từ các thương hiệu hàng đ
 
 ---
 
-*© 2025 Oichin — Tất cả quyền được bảo lưu.*
+*© 2026 Oichin — Tất cả quyền được bảo lưu.*
 *[oichin.net](https://oichin.net) | Ho Chi Minh City, Vietnam*
