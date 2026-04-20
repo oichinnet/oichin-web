@@ -1,73 +1,117 @@
-# 🛍️ Oichin — Nhà Phân Phối Sextoy Chính Hãng Tại Việt Nam
+# oichin-web
 
-> *"Nâng tầm trải nghiệm phóng khoáng & tử tế"*
-
----
-
-## 🏢 Về Oichin
-
-**Oichin** được thành lập năm 2011, là một trong những đơn vị tiên phong phân phối sản phẩm hỗ trợ sức khỏe tình dục chính hãng tại Việt Nam. Với hơn 10 năm kinh nghiệm, Oichin đã xây dựng được niềm tin vững chắc từ hàng nghìn khách hàng trên khắp cả nước.
-
-Chúng tôi chuyên phân phối sản phẩm từ các thương hiệu hàng đầu thế giới:
-
-- 🇸🇪 **Lelo** — Thụy Điển, luxury wellness
-- 🇩🇪 **Satisfyer** — Đức, công nghệ air pulse
-- 🇨🇦 **We-Vibe** — Canada, đồ chơi cặp đôi
-- 🇺🇸 **Lovense** — Mỹ, kết nối app từ xa
-- 🇺🇸 **Fleshlight** — Mỹ, masturbator nam #1 thế giới
-- 🇩🇪 **Womanizer** — Đức, Pleasure Air technology
-- 🇺🇸 **Svakom** — Mỹ, công nghệ thế hệ mới
-- 🇯🇵 **Tenga** — Nhật Bản, thiết kế tinh tế
+Tài liệu kỹ thuật, cấu trúc Schema.org và scripts tối ưu hóa cho website [oichin.net](https://oichin.net).
 
 ---
 
-## ✅ Cam Kết Của Oichin
-
-| | Cam kết |
-|---|---|
-| 🔒 | Sản phẩm **100% chính hãng** — có tem nhập khẩu, bao bì nguyên seal |
-| 📦 | Giao hàng **kín đáo** — không ghi tên sản phẩm bên ngoài |
-| 🛡️ | Bảo hành **12 tháng** — đổi mới nếu lỗi kỹ thuật |
-| 💬 | Tư vấn **miễn phí** — chuyên nghiệp, không phán xét |
-| 🚚 | **Freeship** toàn quốc — thanh toán khi nhận hàng |
-| 🔐 | Bảo mật thông tin khách hàng **tuyệt đối** |
-
----
-
-## 🛒 Danh Mục Sản Phẩm
-
-- [Sextoy Nữ](https://oichin.net/sextoy-nu) — Máy rung, máy hút, dildo, vibrator
-- [Sextoy Nam](https://oichin.net/sextoy-nam) — Âm đạo giả, masturbator, vòng đeo
-- [Blog Wellness](https://oichin.net/blog) — Kiến thức sức khỏe tình dục
-
----
-
-## 📍 Thông Tin Liên Hệ
+## 📁 Cấu Trúc Repository
 
 ```
-🌐 Website:  https://oichin.net
-📍 Địa chỉ: 27-29 Đường Kênh Tân Hóa, Phường Tân Thới Hoà,
-            Quận Tân Phú, TP. Hồ Chí Minh 700000, Việt Nam
-📞 Tel:      0836665511
-📧 Email:    Contact@oichin.net
-💬 Zalo:     0836665511
+oichin-web/
+├── schema/          # Schema.org JSON-LD structures
+│   ├── organization.json
+│   ├── local-business.json
+│   ├── product.json
+│   └── breadcrumb.json
+├── scripts/         # Web optimization scripts
+│   ├── seo/
+│   └── performance/
+└── docs/            # Deployment documentation
+    ├── setup.md
+    └── deployment.md
 ```
 
 ---
 
-## 🌐 Kênh Mạng Xã Hội
+## 🏗️ Schema.org Implementation
 
-| Platform | Link |
-|---|---|
-| 🌐 Website | [oichin.net](https://oichin.net) |
-| 📘 Facebook | [facebook.com/Oichin.Official](https://www.facebook.com/Oichin.Official) |
-| 📸 Instagram | [instagram.com/oichinshop](https://www.instagram.com/oichinshop) |
-| 🎵 TikTok | [tiktok.com/@oichinshop](https://www.tiktok.com/@oichinshop) |
-| 🎥 YouTube | [youtube.com/@Oichin-Official](https://www.youtube.com/@Oichin-Official) |
-| 📌 Pinterest | [pinterest.com/OichinShop](https://www.pinterest.com/OichinShop) |
-| 🐦 Twitter/X | [x.com/OichinShop](https://x.com/OichinShop) |
+Website oichin.net sử dụng các Schema.org types sau:
+
+| Schema Type | Mục đích | URL áp dụng |
+|---|---|---|
+| `Organization` | Thông tin tổ chức Oichin | Toàn site |
+| `LocalBusiness` | NAP + địa chỉ cửa hàng | Homepage |
+| `Product` | Thông tin sản phẩm | Product pages |
+| `BreadcrumbList` | Điều hướng phân cấp | Tất cả pages |
+| `FAQPage` | Câu hỏi thường gặp | Blog, landing pages |
+| `WebSite` | Sitelinks search box | Homepage |
 
 ---
 
-*© 2026 Oichin — Tất cả quyền được bảo lưu.*
-*[oichin.net](https://oichin.net) | Ho Chi Minh City, Vietnam*
+## 📍 NAP (Name · Address · Phone)
+
+Thông tin NAP chuẩn dùng trong Schema.org và toàn bộ entity network:
+
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "Oichin",
+  "url": "https://oichin.net",
+  "telephone": "+84836665511",
+  "email": "Contact@oichin.net",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "27-29 Đường Kênh Tân Hóa",
+    "addressLocality": "Phường Tân Thới Hoà, Quận Tân Phú",
+    "addressRegion": "TP. Hồ Chí Minh",
+    "postalCode": "700000",
+    "addressCountry": "VN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "10.7893",
+    "longitude": "106.6296"
+  }
+}
+```
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend |  PHP |
+| Template | Blade |
+| Database | MySQL |
+| Cache | Redis |
+| CDN | Cloudflare |
+| Analytics | Google Analytics 4 |
+| Search Console | Google Search Console |
+
+---
+
+## 🔗 Sitemap & Indexing
+
+| Sitemap | Nội dung |
+|---|---|
+| [oichin.net/sitemap.xml](https://oichin.net/sitemap.xml) | Sitemap index — tổng hợp toàn bộ sitemaps |
+| [oichin.net/productcate-sitemap.xml](https://oichin.net/productcate-sitemap.xml) | Danh mục sản phẩm |
+| [oichin.net/product-sitemap.xml](https://oichin.net/product-sitemap.xml) | Trang sản phẩm chi tiết |
+| [oichin.net/blogcate-sitemap.xml](https://oichin.net/blogcate-sitemap.xml) | Danh mục bài viết |
+| [oichin.net/blog-sitemap.xml](https://oichin.net/blog-sitemap.xml) | Bài viết blog |
+
+---
+
+## 📊 Core Web Vitals Target
+
+| Metric | Target | Hiện tại |
+|---|---|---|
+| LCP (Largest Contentful Paint) | < 2.5s | — |
+| FID (First Input Delay) | < 100ms | — |
+| CLS (Cumulative Layout Shift) | < 0.1 | — |
+| TTFB (Time to First Byte) | < 800ms | — |
+
+---
+
+## 📝 Changelog
+
+| Ngày | Thay đổi |
+|---|---|
+| 2026-01 | Initial commit — Schema.org structures |
+| 2026-02 | Thêm LocalBusiness schema |
+| 2026-04 | Cập nhật sitemap priority |
+
+---
+
+*Maintained by [oichinnet](https://github.com/oichinnet) · [oichin.net](https://oichin.net)*
